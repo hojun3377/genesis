@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.l-hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slider-content:nth-child(1) {
+    background: url(../img/genesis-kr-design-the-new-gv70-main-hero-desktop-2560x900-ko_2.jpeg) no-repeat center center / cover;
+    opacity: 1;
+    transition: all 0.3s ease-out;
+}
+.slider-content:nth-child(2) {
+    background: url(../img/genesis-kr-design-the-new-g70-main-hero-desktop-2560x900-ko.jpeg) no-repeat center center / cover;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+.slider-content:nth-child(3) {
+    background: url(../img/genesis-kr-main-key-visual-g80-01-desktop-2560x900-ko.jpeg) no-repeat center center / cover;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.btn-left {
+    position: absolute;
+    top: calc(50% - 7rem);
+    left: 1.8rem;
+    color: #fff;
+    z-index: 1;
+}
+.btn-left>img {
+    transform: rotate(180deg);
+    width: 24px;
+    height: 44px;
+}
+.btn-right {
+    position: absolute;
+    top: calc(50% - 7rem);
+    right: 1.8rem;
+    color: #fff;
+    z-index: 1;
+}
+.btn-left>img {
+    width: 24px;
+    height: 44px;
+}
